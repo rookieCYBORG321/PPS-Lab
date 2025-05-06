@@ -1,0 +1,50 @@
+class Car:
+	print(f"{self.color}")
+
+class Car2(Car):
+	def __inti__(self,brand,price,model,color):
+		super(),__inti__(brand,price,model,color)
+
+		def display_details(self):
+			print(f"{self.brand}")
+			print(f"{self.price}")
+			print(f"{self.model}")
+			print(f"{self.color}")
+
+
+	
+
+
+
+
+
+def get_car_details():
+	brand = input("brand: ")
+	price = float(input("price: "))
+	model = input("model: ")
+	color = input("color: ")
+	return brand, price, model, color
+
+print("Details for Car 1:")
+car1_brand, car1_price, car1_model, car1_color = get_car_details()
+
+# create an object car1
+car1 = Car1(car1_brand,car1_price,car1_model,car1_color)
+
+
+
+print("Details for Car 2:")
+car2_brand, car2_price, car2_model, car2_color = get_car_details()
+
+# Create the second car object
+car2 = Car2(car2_brand,car2_price,car2_model,car2_color)
+
+
+
+print("Car 1 Details:")
+# Display details of the car1
+car1.display_details()
+
+print("Car 2 Details:")
+# Display details of the car1
+car2.display_details()

@@ -1,0 +1,15 @@
+import datetime
+year = int(input("year: "))
+month = int(input("month: "))
+day = int(input("day: "))
+
+try:
+	date = datetime.datetime(year, month,day)
+	print("valid")
+
+	next_day = date + datetime.timedelta(days = 1)
+	print(f"incremented date: {next_day.strftime('%Y-%m-%d')}")
+
+except ValueError:
+	print("invalid")
+

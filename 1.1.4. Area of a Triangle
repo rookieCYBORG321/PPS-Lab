@@ -1,0 +1,2 @@
+b,h = float(input("Base: ")),float(input("Height: "))
+print(f"Area:{0.5 * b* h: .2f}")

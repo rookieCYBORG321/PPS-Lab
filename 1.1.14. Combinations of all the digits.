@@ -1,0 +1,17 @@
+from itertools import permutations
+
+a = input("digit1 (0-9): ")
+b = input("digit2 (0-9): ")
+c = input("digit3 (0-9): ")
+
+x = a + b + c
+
+if len(x) !=3 or not x.isdigit():
+	print("Invalid")
+
+else:
+
+	combinations = permutations(x)
+
+	for combination in combinations:
+			print("".join(combination))
